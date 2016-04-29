@@ -1,0 +1,68 @@
+{
+    "name": "react-datepicker",
+    "version": "1.0.0",
+    "description": "A datepicker component for react.",
+    "main": "index.js",
+    "entry": {
+        "datepicker": "./examples/index.js"
+    },
+    "directories": {
+        "example": "examples",
+        "test": "test"
+    },
+    "scripts": {
+        "babel": "babel src -d dist",
+        "dev": "webpack",
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/scautank/react-datepicker.git"
+    },
+    "author": "canye.wlc@gmail.com",
+    "license": "MIT",
+    "devDependencies": {
+        "babel-core": "~6.3.17",
+        "babel-jest": "*",
+        "babel-loader": "~6.2.0",
+        "babel-preset-es2015": "~6.3.13",
+        "babel-preset-react": "~6.3.13",
+        "babel-preset-stage-0": "~6.3.13",
+        "css-loader": "~0.23.0",
+        "file-loader": "~0.8.5",
+        "jest-cli": "*",
+        "node-sass": "~3.4.2",
+        "react-addons-test-utils": "~0.14.0",
+        "react-hot-loader": "~1.3.0",
+        "sass-loader": "~3.1.2",
+        "style-loader": "~0.13.0",
+        "url-loader": "~0.5.7",
+        "webpack": "~1.12.9"
+    },
+    "dependencies": {
+        "react": "~0.14.0",
+        "react-dom": "~0.14.0"
+    },
+    "bugs": {
+        "url": "https://github.com/scautank/react-datepicker/issues"
+    },
+    "homepage": "https://github.com/scautank/react-datepicker#readme",
+    "jest": {
+        "collectCoverage": false,
+        "testDirectoryName": "test",
+        "moduleFileExtensions": [
+            "js",
+            "jsx",
+            "json"
+        ],
+        "scriptPreprocessor": "<rootDir>/node_modules/babel-jest",
+        "unmockedModulePathPatterns": [
+            "<rootDir>/node_modules/react",
+            "<rootDir>/node_modules/react-dom",
+            "<rootDir>/node_modules/react-addons-test-utils"
+        ],
+        "modulePathIgnorePatterns": [
+            "<rootDir>/node_modules/"
+        ]
+    }
+}
